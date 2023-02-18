@@ -1,7 +1,51 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box
+}
+
+body {
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    background-color: #FF5733;
+    color: white;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1 {
+    font-size: 4rem;
+}
+
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.time {
+    margin: 30px;
+}
+
+#hour, #minute, #second {
+    font-size: 3rem;
+    padding-left: 20px;
+}
+
+.buttons button {
+    padding: 8px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 6px;
+    cursor: pointer;
 }

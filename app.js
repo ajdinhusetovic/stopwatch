@@ -11,8 +11,8 @@ const resetButton = document.querySelector('#reset');
 
 
 
-let seconds = 50;
-let minutes = 59;
+let seconds = 00;
+let minutes = 00;
 let hours = 00;
 let interval;
 
@@ -50,6 +50,20 @@ const start = () => {
     if (hours > 9) {
         hour.textContent = hours;
     }
+
+}
+
+const reset = () => {
+    seconds = 00;
+    minutes = 00;
+    hours = 00;
+
+    second.textContent = `0${seconds}`;
+    minute.textContent = `0${minutes}`;
+    hour.textContent = `0${hours}`;
+
+    clearInterval(interval);
+    startButton.disabled = false;
 }
 
 
@@ -62,4 +76,6 @@ startButton.addEventListener('click', () => {
 stopButton.addEventListener('click', () => {
     clearInterval(interval);
     startButton.disabled = false;
-})
+});
+
+resetButton.addEventListener('click', reset);

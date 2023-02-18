@@ -43,9 +43,39 @@ body {
 }
 
 .buttons button {
-    padding: 8px;
     font-size: 20px;
     border: 2px solid black;
     border-radius: 6px;
+    padding: 12px;
+    margin-left: 10px;
+    width: 100px;
     cursor: pointer;
+}
+
+/* media queries */
+
+
+@media only screen and (min-width: 768px) {
+    .container h1 {
+        font-size: 6rem;
+    }
+
+    #hour, #minute, #second {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container h1 {
+        font-size: 4rem;
+    }
+    #hour, #minute, #second {
+        font-size: 2rem;
+    }
+
+    .buttons button {
+        padding: 4px;
+        font-size: 16px;
+        width: 80px;
+    }
 }

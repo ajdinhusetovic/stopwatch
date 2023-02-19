@@ -29,11 +29,11 @@ const start = () => {
     if (seconds > 59) {
         minutes++;
         seconds = 00;
-        minute.textContent = `0${minutes} :`;
+        minute.textContent = `0${minutes}`;
         second.textContent = `0${seconds}`;
     }
     if (minutes < 10) {
-        minute.textContent = `0${minutes} :`; 
+        minute.textContent = `0${minutes}`; 
     }
     if (minutes > 9) {
         minute.textContent = minutes;
@@ -41,11 +41,11 @@ const start = () => {
     if (minutes > 59) {
         hours++;
         minutes = 00;
-        hour.textContent = `0${hours} :`;
-        minute.textContent = `0${minutes} :`;
+        hour.textContent = `0${hours}`;
+        minute.textContent = `0${minutes}`;
     }
     if (hours < 10) {
-        hour.textContent = `0${hours} :`;
+        hour.textContent = `0${hours}`;
     }
     if (hours > 9) {
         hour.textContent = hours;

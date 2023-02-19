@@ -22,24 +22,29 @@ body {
     justify-content: center;
 }
 
-.container h1 {
+.title h1 {
     font-size: 4rem;
 }
 
-.stopwatch {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 .time {
-    margin: 30px;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.double-dot {
+    font-size: 2rem;
+    padding-left: 4px;
 }
 
 #hour, #minute, #second {
     font-size: 3rem;
-    padding-left: 20px;
+    margin-left: 8px;
+    width: 80px;
 }
 
 .buttons button {
@@ -47,7 +52,7 @@ body {
     border: 2px solid black;
     border-radius: 6px;
     padding: 12px;
-    margin-left: 10px;
+    margin: 10px;
     width: 100px;
     cursor: pointer;
 }
@@ -56,17 +61,18 @@ body {
 
 
 @media only screen and (min-width: 768px) {
-    .container h1 {
+    .title h1 {
         font-size: 6rem;
     }
 
     #hour, #minute, #second {
         font-size: 4rem;
     }
+    
 }
 
 @media only screen and (max-width: 600px) {
-    .container h1 {
+    .title h1 {
         font-size: 4rem;
     }
     #hour, #minute, #second {
@@ -77,5 +83,21 @@ body {
         padding: 4px;
         font-size: 16px;
         width: 80px;
+    } 
+}
+
+@media only screen and (max-width: 450px) {
+    .title h1 {
+        font-size: 3rem;
     }
+    #hour, #minute, #second {
+        font-size: 2rem;
+    }
+
+    .buttons button {
+        padding: 4px;
+        font-size: 14px;
+        width: 60px;
+        margin-left: 4px;
+    } 
 }

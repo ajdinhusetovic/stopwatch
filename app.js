@@ -59,8 +59,8 @@ const reset = () => {
     hours = 00;
 
     second.textContent = `0${seconds}`;
-    minute.textContent = `0${minutes} :`;
-    hour.textContent = `0${hours} :`;
+    minute.textContent = `0${minutes}`;
+    hour.textContent = `0${hours}`;
 
     clearInterval(interval);
     startButton.disabled = false;
